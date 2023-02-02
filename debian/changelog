@@ -1,3 +1,10 @@
+mpp (1.5.0-1) jammy; urgency=critical
+
+  * [mpp_enc_impl]: Cleanup hal_task on empty eos task
+    ...
+
+ -- george <george@cool-pi.com>  Thu, 2 Feb 2023 12:17:00 +0800
+ 
 mpp (1.5.0-1) stable; urgency=critical
 
   * [mpp_enc_impl]: Cleanup hal_task on empty eos task
