@@ -74,14 +74,14 @@ typedef enum DmaHeapType_e {
 } DmaHeapType;
 
 static const char *heap_names[] = {
-    "system-uncached",          /* 0 - default */
+    "system-uncached-dma32",    /* 0 - default */
     "cma-uncached",             /* 1 -                                      DMA_HEAP_CMA */
-    "system",                   /* 2 -                  DMA_HEAP_CACHABLE                */
+    "system-dma32",             /* 2 -                  DMA_HEAP_CACHABLE                */
     "cma",                      /* 3 -                  DMA_HEAP_CACHABLE | DMA_HEAP_CMA */
-    "system-uncached-dma32",    /* 4 - DMA_HEAP_DMA32                                    */
-    "cma-uncached",             /* 5 - DMA_HEAP_DMA32                     | DMA_HEAP_CMA */
-    "system-dma32",             /* 6 - DMA_HEAP_DMA32 | DMA_HEAP_CACHABLE                */
-    "cma",                      /* 7 - DMA_HEAP_DMA32 | DMA_HEAP_CACHABLE | DMA_HEAP_CMA */
+    "system-uncached",          /* 4 - DMA_HEAP_DMA64                                    */
+    "cma-uncached",             /* 5 - DMA_HEAP_DMA64                     | DMA_HEAP_CMA */
+    "system",                   /* 6 - DMA_HEAP_DMA64 | DMA_HEAP_CACHABLE                */
+    "cma",                      /* 7 - DMA_HEAP_DMA64 | DMA_HEAP_CACHABLE | DMA_HEAP_CMA */
 };
 
 static int heap_fds[DMA_HEAP_TYPE_NB];
